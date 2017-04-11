@@ -23,7 +23,7 @@ describe 'lamp_customers::default' do
     end
 
     before do
-      stub_command("mysql -h 127.0.0.1 -u db_admin -pfakeadminpassword -D my_company -e 'describe customers;'").and_return(0)
+      stub_command("mysql -h 127.0.0.1 -u db_admin -pfakeadminpassword -D 4thcoffee -e 'describe customers;'").and_return(0)
     end
 
     it 'converges successfully' do
