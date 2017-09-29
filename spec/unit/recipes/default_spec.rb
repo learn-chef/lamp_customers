@@ -15,7 +15,7 @@ describe 'lamp_customers::default' do
           'mysql' => {
             'id' => 'mysql',
             'admin_password' => 'fakeadminpassword',
-            'root_password' => 'fakerootpassword'
+            'root_password' => 'fakerootpassword',
           }
         )
       end
